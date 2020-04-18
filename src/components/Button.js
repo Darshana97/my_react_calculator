@@ -9,6 +9,18 @@ class Button extends Component {
   render() {
     return (
       <div className="buttons">
+        <button name="(" onClick={this.buttonPressed}>
+          (
+        </button>
+        <button name=")" onClick={this.buttonPressed}>
+          )
+        </button>
+        <button name="C" onClick={this.buttonPressed}>
+          C
+        </button>
+        <button name="CE" onClick={this.buttonPressed}>
+          CE
+        </button>
         <button name="1" onClick={this.buttonPressed}>
           1
         </button>
@@ -17,6 +29,9 @@ class Button extends Component {
         </button>
         <button name="3" onClick={this.buttonPressed}>
           3
+        </button>
+        <button name="+" onClick={this.buttonPressed}>
+          +
         </button>
         <button name="4" onClick={this.buttonPressed}>
           4
@@ -27,6 +42,9 @@ class Button extends Component {
         <button name="6" onClick={this.buttonPressed}>
           6
         </button>
+        <button name="-" onClick={this.buttonPressed}>
+          -
+        </button>
         <button name="7" onClick={this.buttonPressed}>
           7
         </button>
@@ -36,14 +54,21 @@ class Button extends Component {
         <button name="9" onClick={this.buttonPressed}>
           9
         </button>
-        <button name="+" onClick={this.buttonPressed}>
-          +
+        <button name="*" onClick={this.buttonPressed}>
+          *
         </button>
-        <button name="-" onClick={this.buttonPressed}>
-          -
+        <button name="." onClick={this.buttonPressed}>
+          .
         </button>
+        <button name="0" onClick={this.buttonPressed}>
+          0
+        </button>
+
         <button name="=" onClick={this.buttonPressed}>
           =
+        </button>
+        <button name="/" onClick={this.buttonPressed}>
+          /
         </button>
       </div>
     );
