@@ -8,7 +8,7 @@ class Button extends Component {
 
   render() {
     return (
-      <div>
+      <div className="buttons">
         <button name="1" onClick={this.buttonPressed}>
           1
         </button>

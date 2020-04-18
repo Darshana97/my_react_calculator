@@ -18,16 +18,24 @@ export class App extends Component {
   };
 
   calculate = () => {
-    this.setState({
-      result: eval(this.state.result),
-    });
+    try {
+      this.setState({
+        result: eval(this.state.result),
+      });
+    } catch (error) {
+      this.setState({
+        result: "error",
+      });
+    }
   };
 
   render() {
     return (
-      <div className="App">
-        <Output result={this.state.result} />
-        <Buttons buttonPressed={this.buttonPressed} />
+      <div className="calc-body">
+        <div className="App">
+          <Output result={this.state.result} />
+          <Buttons buttonPressed={this.buttonPressed} />
+        </div>
       </div>
     );
   }
